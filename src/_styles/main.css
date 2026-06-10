@@ -9,6 +9,7 @@ html {
     --background-color-tinted-hover: #fbfbfb;
     --background-color-tinted-active: #f5f5f5;
     --dark-mode-transition: color .16s, background-color .16s;
+    scrollbar-gutter: stable;
 }
 
 html.dark:not(.print) {
@@ -29,7 +30,7 @@ body {
     background-color: var(--background-color);
     line-height: 1.5;
     font-size: 18px;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     transition: var(--dark-mode-transition);
 }
 
