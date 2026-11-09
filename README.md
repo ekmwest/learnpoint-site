@@ -1,6 +1,6 @@
 ## Development Environment Set Up
 
-1. [Install Deno](https://docs.deno.com/runtime/getting_started/installation/) `v2.8.3` or later.
+1. [Install kit](https://github.com/learnpoint/kit).
 
 2. [Create a new fork](https://github.com/learnpoint/learnpoint-site/fork). ***NOTE:*** Make sure to create the fork *in your personal GitHub account* — not in the Learnpoint organisation.
 
@@ -60,22 +60,22 @@ Deploying your fork to Netlify is optional, but highly recommended.
 
 ## Development Workflow
 
-1. Start the dev server with the default port (3333):
+1. Start the dev server with the default port (4444):
 
-        deno task dev
+        kit dev
 
      ... or start the dev server on a custom port:
 
-        deno task dev [port]
+        kit dev -p [port]
 
-2. Open the site at `http://localhost:3333` (or the custom port)
+2. Open the site at `http://localhost:4444` (or the custom port).
 
 3. Write all your changes to the `src` folder. You should never make any changes to the `docs` folder.
 
 4. If there are any file mismatches, or build problems, it's perfectly safe to:
     1. Stop the dev server: `Ctrl + C`.
     2. Completely delete the ```docs``` folder.
-    3. Restart the dev server: `deno task dev`. This command will rebuild the `docs` folder.
+    3. Restart the dev server: `kit dev`. This command will rebuild the `docs` folder.
 
 5. When done, stop the server:
 
